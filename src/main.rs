@@ -118,5 +118,5 @@ fn main() {
         //println!("{}", norms::s9(&(txProdPlanPart[0].mu(&x)), &0.0))
         println!("{}", rules[0][0].mu(&x))
     }
-    println!("Jasmine")
+    println!("Jasmine eeeeee")
 }
