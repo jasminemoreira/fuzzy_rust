@@ -8,7 +8,6 @@ pub struct Triangular {
     pub m: f64,
     pub b: f64,
     pub h: f64,
-    pub term: String,
 }
 impl Set for Triangular {
     fn mu(&self, x: &f64) -> f64 {
@@ -28,7 +27,6 @@ pub struct Trapezoidal {
     pub n: f64,
     pub b: f64,
     pub h: f64,
-    pub term: String,
 }
 impl Set for Trapezoidal {
     fn mu(&self, x: &f64) -> f64 {
@@ -48,7 +46,6 @@ pub struct Gaussian {
     pub m: f64,
     pub sigma: f64,
     pub h: f64,
-    pub term: String,
 }
 impl Set for Gaussian {
     fn mu(&self, x: &f64) -> f64 {
@@ -59,7 +56,6 @@ impl Set for Gaussian {
 pub struct Singleton {
     pub m: f64,
     pub h: f64,
-    pub term: String,
 }
 impl Set for Singleton {
     fn mu(&self, x: &f64) -> f64 {
@@ -75,7 +71,6 @@ pub struct Universe {
     pub start: f64,
     pub stop: f64,
     pub nstep: u64,
-    pub term: String,
 }
 impl Universe {
     pub fn linspace(&self) -> FloatIterator {
