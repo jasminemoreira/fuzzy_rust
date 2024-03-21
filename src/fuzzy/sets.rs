@@ -2,7 +2,9 @@ use crate::fuzzy::floatiterator::FloatIterator;
 pub trait Set {
     fn mu(&self, x: &f64) -> f64;
 }
-
+pub fn get_triangular(a: f64, m: f64, b: f64) -> Triangular {
+    Triangular { a, m, b, h: 1. }
+}
 pub struct Triangular {
     pub a: f64,
     pub m: f64,
