@@ -3,7 +3,7 @@ use crate::fuzzy::sets::{Set, Singleton, Triangular, Universe};
 
 use super::sets::get_triangular;
 
-pub fn intersection<T1: Set, T2: Set>(seta: &T1, setb: &T2, x: &f64) -> f64 {
+pub fn intersection(seta: &dyn Set, setb: &dyn Set, x: &f64) -> f64 {
     min(seta.mu(x), setb.mu(x))
 }
 
